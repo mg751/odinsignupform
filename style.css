@@ -1,3 +1,24 @@
+:root {
+    --main-color: black;
+    --bg-color-light: #dbdbcb;
+    --secondary-color: #94a48c;
+    --heading-font: 'Edu QLD Beginner', cursive;
+}
+
+
+#logobanner h1 {
+    font-family: var(--heading-font);
+    color: var(--main-color);
+    font-size: 2.75rem;
+    font-weight: lighter;
+    position: relative;
+    bottom: 5px;
+}
+
+body {
+    margin: 0;
+}
+
 #maincontainer {
     height: 100vh;
     display: flex;
@@ -8,6 +29,57 @@
     flex-basis: 50%;
 }
 
-* {
-    border: 1px solid red;
+#imagesection {
+    display: flex;
+    flex-direction: column;
+    background-image:  url(images/sasha-pleshco-o5I0e1hmMwc-unsplash.jpg);
+    background-position: top;
+    background-size: cover;
+}
+
+#formsection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#formintro,
+#formcontainer,
+#formfooter {
+    margin: 0px 20px;
+}
+
+#formintro p {
+    font-size: large;
+}
+
+#logobanner {
+    position: relative;
+    top: 25%;
+    display: flex;
+    justify-content: center;
+    background-color: #00000010;
+    gap: 20px;
+}
+
+#logotext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#formouter {
+    display: flex;
+    gap: 40px;
+}
+
+#formleft,
+#formright {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    width: 150px;
 }

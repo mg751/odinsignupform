@@ -4,52 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brutalist signup form</title>
+    <title>MD signup form</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id="maincontainer">
+
         <div id="imagesection">
             <div id="logobanner">
                 <div id="logocontainer">
-                    <img src="" alt="">
+                    <img src="/images/pngwing.com.png" width="150" height="150" alt="">
                 </div>
                 <div id="logotext">
-                    <p>Rust</p>
+                    <h1>md.md</h1>
                 </div>
             </div>
         </div>
+
         <div id="formsection">
             <div id="formintro">
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam tempora ipsam sit architecto sed molestiae ducimus a recusandae. Laborum est deleniti eum voluptates earum accusantium rem, quasi mollitia a.</p>
             </div>
             <div id="formcontainer">
-                <form action="">
-                    <div id="formleft">
-                        <label for="firstname">First Name</label>
-                        <input type="text" name="firstname" id="firstname">
+                <form id="mdform" action="">
+                    <div id="formouter">
+                        <div id="formleft">
+                            <label for="firstname">First Name</label>
+                            <input type="text" name="firstname" id="firstname">
                         
-                        <label for="emailfield">Email</label>
-                        <input type="email" name="email" id="emailfield">
-
-                        <label for="pwfield">Password</label>
-                        <input type="password" name="password" id="pwfield">
+                            <label for="emailfield">Email</label>
+                            <input type="email" name="email" id="emailfield">
+                            <label for="pwfield">Password</label>
+                            <input type="password" name="password" id="pwfield">
+                        </div>
+                        <div id="formright">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" name="lastname" id="lastname">
+                            <label for="telfield">Phone Number</label>
+                            <input type="tel" name="telephone" id="telfield">
+                            <label for="confirmpw">Confirm Password</label>
+                            <input type="password" name="confirmpw" id="confirmpw">
+                        </div>
                     </div>
-
-                    <div id="formright">
-                        <label for="lastname">Last Name</label>
-                        <input type="text" name="lastname" id="lastname">
-
-                        <label for="telfield">Phone Number</label>
-                        <input type="tel" name="telephone" id="telfield">
-
-                        <label for="confirmpw">Confirm Password</label>
-                        <input type="password" name="confirmpw" id="confirmpw">
-                    </div>
-
                 </form>
             </div>
-            <div id="formfooter"></div>
+            <div id="formfooter">
+                <button type="submit" form="mdform">Submit</button>
+            </div>
         </div>
     </div>
 </body>
