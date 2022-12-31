@@ -9,50 +9,57 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="maincontainer">
+    <div class="maincontainer">
 
-        <div id="imagesection">
-            <div id="logobanner">
-                <div id="logocontainer">
-                    <img src="/images/pngwing.com.png" width="150" height="150" alt="">
-                </div>
-                <div id="logotext">
-                    <h1>md.md</h1>
-                </div>
+        <div class="imagesection">
+            <div class="logobanner">
+                <img src="/images/pngwing.com.png" width="150" height="150" alt="">
+                <h1>md.md</h1>
             </div>
         </div>
 
-        <div id="formsection">
-            <div id="formintro">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam tempora ipsam sit architecto sed molestiae ducimus a recusandae. Laborum est deleniti eum voluptates earum accusantium rem, quasi mollitia a.</p>
+        <div class="formsection">
+            <div class="intro">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quam <em>tempora</em> ipsam sit architecto sed molestiae ducimus a recusandae.
+                </p>
+                <p>
+                    Laborum est <em>deleniti</em> eum voluptates.
+                </p>
             </div>
-            <div id="formcontainer">
-                <form id="mdform" action="">
-                    <div id="formouter">
-                        <div id="formleft">
+            <div class="formcontainer">
+                <form id="mdform" action="" onsubmit="checkPw();">
+                    <legend>Let's do this</legend>
+                    <div class="form__outer">
+                        <fieldset>
                             <label for="firstname">First Name</label>
-                            <input type="text" name="firstname" id="firstname">
-                        
-                            <label for="emailfield">Email</label>
-                            <input type="email" name="email" id="emailfield">
-                            <label for="pwfield">Password</label>
-                            <input type="password" name="password" id="pwfield">
-                        </div>
-                        <div id="formright">
+                            <input type="text" name="firstname" id="firstname" required placeholder="John">
                             <label for="lastname">Last Name</label>
-                            <input type="text" name="lastname" id="lastname">
+                            <input type="text" name="lastname" id="lastname" required placeholder="Doe">
+                        </fieldset>
+                        <fieldset>
+                            <label for="emailfield">Email</label>
+                            <input type="email" name="email" id="emailfield"  placeholder="abc@email.com">
                             <label for="telfield">Phone Number</label>
-                            <input type="tel" name="telephone" id="telfield">
+                            <input type="tel" name="telephone" id="telfield"  placeholder="00373-1234-123">
+                        </fieldset>
+                        <fieldset class="formright">
+                            <label for="pwfield">Password</label>
+                            <input type="password" name="password" id="pwfield" required>
                             <label for="confirmpw">Confirm Password</label>
-                            <input type="password" name="confirmpw" id="confirmpw">
-                        </div>
+                            <input type="password" name="confirmpw" id="confirmpw" required>
+                        </fieldset>
                     </div>
                 </form>
             </div>
-            <div id="formfooter">
-                <button type="submit" form="mdform">Submit</button>
+            <div class="formfooter">
+                <button type="submit" form="mdform">Create Account</button>
+                <p>Already have an account? <a href="/">Log in</a></p>
             </div>
         </div>
     </div>
 </body>
+<footer>
+    <script src="/script.js"></script>
+</footer>
 </html>

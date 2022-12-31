@@ -2,34 +2,47 @@
     --main-color: black;
     --bg-color-light: #dbdbcb;
     --secondary-color: #94a48c;
+    --md-blue: #0046AE;
+    --md-yellow: #FFD200;
+    --md-red: #CC092F;
+    --md-brown: #B07E5B;
+    --md-green: #007A50;
     --heading-font: 'Edu QLD Beginner', cursive;
 }
 
 
-#logobanner h1 {
+
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.logobanner h1 {
     font-family: var(--heading-font);
     color: var(--main-color);
-    font-size: 2.75rem;
+    font-size: 2rem;
     font-weight: lighter;
-    position: relative;
-    bottom: 5px;
 }
+
 
 body {
     margin: 0;
 }
 
-#maincontainer {
+.maincontainer {
     height: 100vh;
     display: flex;
 }
 
-#imagesection,
-#formsection {
-    flex-basis: 50%;
+.imagesection {
+    flex-basis: 30%;
 }
 
-#imagesection {
+.formsection {
+    flex-basis: 70%;
+}
+
+.imagesection {
     display: flex;
     flex-direction: column;
     background-image:  url(images/sasha-pleshco-o5I0e1hmMwc-unsplash.jpg);
@@ -37,49 +50,109 @@ body {
     background-size: cover;
 }
 
-#formsection {
+.formsection {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #eeeeee;
+    flex-wrap: wrap;
 }
 
-#formintro,
-#formcontainer,
-#formfooter {
-    margin: 0px 20px;
-}
 
-#formintro p {
-    font-size: large;
-}
-
-#logobanner {
+.intro p {
+    padding: 0px 20px;
     position: relative;
-    top: 25%;
+    font-size: 1.2rem;
+    bottom: 50px;
+    width: 500px;
+    font-weight: 500;
+}
+
+legend {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+
+
+.formcontainer {
+    padding: 20px;
+    background-color: white;
+}
+
+.logobanner {
+    position: relative;
+    top: 255px;
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: #00000010;
     gap: 20px;
 }
 
-#logotext {
+#mdform {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
-
-#formouter {
-    display: flex;
-    gap: 40px;
+.formcontainer input {
+    width: 200px;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 3px;
 }
 
-#formleft,
-#formright {
+.formcontainer label {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    text-shadow: 1px solid black;
+    color: #000000CC;
+    position: absolute;
+    bottom: 40px;
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+    position: relative;
+}
+
+.form__outer {
     display: flex;
     flex-direction: column;
+    gap: 30px;
+    width: 800px;
 }
 
-input {
-    width: 150px;
+.formfooter button {
+    margin: 40px 0px 0px 20px;
+    padding: 15px 50px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    background-color: var(--md-yellow);
+}
+
+.formfooter p {
+    margin: 35px 20px;
+}
+
+.formcontainer label {
+    margin-bottom: 5px;
+}
+
+.formfooter a {
+    text-decoration: none;
+    color: var(--md-blue);
+}
+
+
+input:focus {
+    outline: none;
+    border: 1px solid lightblue;
+    border-radius: 3px;
+    box-shadow: 1px 1px 4px black;
 }
